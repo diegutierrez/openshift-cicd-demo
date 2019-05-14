@@ -106,8 +106,8 @@ pipeline {
                 gitClone()
 
                 container("python") {
-                    sh "pip install requests"
-                    sh "python ./src/test/python/it.py"
+                    sh "sudo pip install requests"
+                    sh "sudo python ./src/test/python/it.py"
                 }
             }
         }
